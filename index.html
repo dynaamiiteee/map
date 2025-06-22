@@ -1,4 +1,22 @@
-<!-- Add script to the <head> of your page to load the embeddable map component -->
-<script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
-<!-- Add custom element to <body> of your page -->
- <arcgis-embedded-map style="height:600px;width:700px;" item-id="fe6ca0085cf54ba381ba74c4d15872fa" theme="light" share-enabled portal-url="https://www.arcgis.com" ></arcgis-embedded-map>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArcGIS Embedded Map</title>
+    <!-- Add script to the <head> of your page to load the embeddable map component -->
+    <script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hiking, Biking, and Walking Trails</h1>
+    <p>This map shows some popular places for outdoor activities near Rexburg, Idaho. They each include a review from someone who has already visited</p>
+    <!-- Add custom element to <body> of your page -->
+    <arcgis-embedded-map
+        style="height:600px;width:700px;"
+        item-id="fe6ca0085cf54ba381ba74c4d15872fa"
+        theme="light"
+        share-enabled
+        portal-url="https://www.arcgis.com">
+    </arcgis-embedded-map>
+</body>
+</html>
